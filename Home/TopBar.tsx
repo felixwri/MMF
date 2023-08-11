@@ -10,7 +10,7 @@ const TopBar: React.FC = () => {
     <SafeAreaView style={styles.container}>
       <Image
         source={require('../assets/Title.png')}
-        style={{ height: imageHeight,  marginBottom: 2}}
+        style={{ height: imageHeight,  marginBottom: 2, marginTop: 80}}
         resizeMode="contain"
       />
     </SafeAreaView>
@@ -22,7 +22,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     justifyContent: 'center',
     alignItems: 'center',
-    borderBottomWidth: height * 0.005,
     borderBlockColor: 'black',
   },
   blackBar: {

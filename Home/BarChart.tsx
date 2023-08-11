@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
   progressBar: {
     width: width * 0.8,
     height: height * 0.05,
-    backgroundColor: grayC,
+    backgroundColor: whiteC,
     borderRadius: 10,
     overflow: 'hidden',
     alignSelf: 'center',
@@ -156,8 +156,8 @@ const styles = StyleSheet.create({
   TitleOutside: {
     backgroundColor: purpleC,
     width: width * 0.9,
-    paddingTop: height * 0.008,
-    paddingBottom: height * 0.008,
+    paddingTop: 10,
+    paddingBottom: 10,
     borderRadius: 10,
     shadowColor: 'black',
     shadowOffset: {
@@ -180,6 +180,9 @@ const styles = StyleSheet.create({
   },
   smallBarOutsideLeft: {
     backgroundColor: purpleC,
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingLeft: 5,
     width: width * 0.67,
     borderRadius: width * 0.02,
     shadowColor: 'black',
@@ -214,7 +217,7 @@ const styles = StyleSheet.create({
   smallBarRowRight: {
     width: width * 0.46,
     height: height * 0.025,
-    backgroundColor: grayC,
+    backgroundColor: whiteC,
     borderRadius: width * 0.1,
     overflow: 'hidden',
   },

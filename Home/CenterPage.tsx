@@ -133,11 +133,11 @@ const CenterPage = () => {
   return (
     <ScrollView showsVerticalScrollIndicator={false} style={{ flex: 1, backgroundColor: 'white'  }}>
       <View style={styles.mainInside}>
-        <View style={{ ...styles.TitleOutside, marginTop: height * 0.02 }}> 
+        <View style={{ ...styles.TitleOutside, marginTop: 20, backgroundColor: "white", shadowColor: "white" }}> 
           <Text
             style={[
               styles.text,
-              { fontSize: height * 0.04 * deviceType, fontWeight: 'bold' },
+              { fontSize: 48 * deviceType, fontWeight: 'bold', backgroundColor: "white", textAlign: "center" },
             ]}
           >
             Are you smarter than a monkey?
@@ -167,20 +167,16 @@ const CenterPage = () => {
           <Icon name="arrow-up" style={styles.markerArrow} />
           <View style={styles.infoText}>
             <Text
-              style={{ marginRight: 5, fontWeight: 'bold', fontSize: height * 0.015 }}
-            >
-              {'\u2022'}
-            </Text>
-            <Text
               style={[
                 styles.textSmall,
-                { fontSize: height * 0.015 },
+                { fontSize: 14},
               ]}
             >
               Welcome to Monkey Memory! Explore three games by swiping left and enjoy an additional game to the right, 
-              which doesn't affect your main score bar. Keep a close watch on the score board as it 
-              tallies your points and displays your overall performance as a percentage. 
-              Achieve 80% to prove that your memory skills surpass those of a monkey.
+              which doesn't affect your main score bar.
+              <Text style={{fontStyle: "italic"}}>
+                {"\n\n"}Achieve 80% to prove that your memory skills surpass those of a monkey.
+              </Text>
             </Text>
           </View>
         </View>
@@ -196,11 +192,10 @@ const CenterPage = () => {
               style={{
                 fontSize: 13 * deviceTypeThree,
                 color: blackC,
-                textAlign: 'center',
-                textDecorationLine: 'underline',
+                textAlign: 'center'
               }}
             >
-              Main Game
+              High Score
             </Text>
             <Text
               style={{
@@ -380,15 +375,6 @@ const styles = StyleSheet.create({
     width: width * 0.9,
     paddingTop: height * 0.008,
     paddingBottom: height * 0.008,
-    borderRadius: 10,
-    shadowColor: blackC,
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.4,
-    shadowRadius: 6,
-    elevation: 5,
   },
   infoText: {
     width: width * 0.8,
@@ -415,17 +401,11 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   smallBarOutsideRight: {
-    backgroundColor: purpleC,
+    backgroundColor: whiteC,
     width: width * 0.2,
     justifyContent: 'center',
     borderRadius: 10,
-    shadowColor: blackC,
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.4,
-    shadowRadius: 6,
+    shadowColor: whiteC,
     elevation: 5,
   },
   smallBarRow: {

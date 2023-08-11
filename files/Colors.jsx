@@ -1,4 +1,4 @@
-export const purpleC = "#7575d3";
+export const purpleC = "#a6a6ff";
 export const grayC = "#E0E0E0";
 export const blackC = "#333333";
 export const whiteC = "#FFFFFF";

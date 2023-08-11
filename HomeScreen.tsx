@@ -73,7 +73,7 @@ const HomeScreen: React.FC = () => {
               ]}
             >
               
-              <IconGame name="gamepad" size={25} color="#000" />
+              <IconGame name="gamepad" size={25} color="#FFF" />
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -89,7 +89,7 @@ const HomeScreen: React.FC = () => {
                 selectedIndex === 1 ? styles.selectedButtonText : null,
               ]}
             >
-              <Icon name="home" size={25} color="#000" />
+              <Icon name="home" size={25} color="#FFF" />
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -105,7 +105,7 @@ const HomeScreen: React.FC = () => {
                 selectedIndex === 2 ? styles.selectedButtonText : null,
               ]}
             >
-              <IconGameOne name="bar-chart" size={25} color="#000" />
+              <IconGameOne name="bar-chart" size={25} color="#FFF" />
             </Text>
           </TouchableOpacity>
         </View>
